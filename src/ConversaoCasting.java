@@ -7,10 +7,10 @@ public class ConversaoCasting {
         System.out.println("Digite um número decimal: (ex: 9,75)");
         double numeroDecimal = scanner.nextDouble();
 
-        int numeroInteiro = (int) numeroDecimal;
+        Double numeroWrapper = Double.valueOf(numeroDecimal);
 
         System.out.println("Número original (double): " + numeroDecimal);
-        System.out.println("Número convertido para inteiro: " + numeroInteiro);
+        System.out.println("Número convertido para Wrapper (Double): " + numeroWrapper);
 
         scanner.close();
     }
